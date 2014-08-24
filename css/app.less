@@ -22,10 +22,14 @@
 @family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 @heading-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@scheme: #3f51b5;
+@scheme: #eb9605;
 @schemeLightened: lighten(@scheme, 5%);
 @schemeDarkened: darken(@scheme, 5%);
-@textColor: #543729;
+//@scheme: #3f51b5;
+//@schemeLightened: lighten(@scheme, 5%);
+//@schemeDarkened: darken(@scheme, 5%);
+@textColor: #ffffff;
+//@textColor: #543729;
 @lightGray: #F9F9F9;
 @table-bg-hover: transparent;
 @container-large-desktop: 900px;
@@ -62,9 +66,10 @@ a {
 }
 
 header {
-	background: @scheme;
-	border-top: 3px solid @schemeDarkened;
-	border-bottom: 3px solid @schemeDarkened;
+//	background: @scheme;
+    background-image: url("../assets/images/cover-registry.jpg");
+//  border-top: 3px solid @schemeDarkened;
+//	border-bottom: 3px solid @schemeDarkened;
 	padding: 20px 0;
 	margin-bottom: 20px;
 
