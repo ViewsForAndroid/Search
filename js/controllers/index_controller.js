@@ -1,7 +1,7 @@
 module.exports = function (App) {
 	'use strict';
 
-	var API_URL = 'https://bower-component-list.herokuapp.com';
+	var API_URL = 'http://registry.viewsforandroid.com/packages';
 	var LEFT_KEY = 37;
 	var RIGHT_KEY = 39;
 
@@ -221,7 +221,7 @@ module.exports = function (App) {
 					return false;
 				}
 
-				items = res.data;
+				items = res.data.packages;
 				$scope.loading = false;
 
 				if ($scope.q.length === 0) {
