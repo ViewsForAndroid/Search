@@ -250,11 +250,68 @@ section {
 	}
 }
 
-footer {
-	font-family: @heading-family;
-	text-align: center;
-	font-size: 12px;
-	padding: 30px;
+//footer {
+//	font-family: @heading-family;
+//	text-align: center;
+//	font-size: 12px;
+//	padding: 30px;
+//}
+
+
+/* ==========================================================================
+   9. Footer - The bottom of every page
+   ========================================================================== */
+
+
+
+.site-footer {
+  position: relative;
+  margin: 8rem 0 0 0;
+  padding: 0.5rem 15px;
+  border-top: #c0c7cb 1px solid;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7em;
+  color: #BBC7CC;
+}
+
+.site-footer a {
+  color: #BBC7CC;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-footer a:hover {
+  color: #50585D;
+}
+
+.poweredby {
+  display: block;
+  width: 45%;
+  float: right;
+  text-align: right;
+}
+
+.copyright {
+  display: block;
+  width: 45%;
+  float: left;
+}
+
+/* Clears shit */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+.footer-custom-page {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:0px;   /* Height of the footer */
 }
 
 // spinner
