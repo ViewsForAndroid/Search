@@ -27,11 +27,12 @@
 @schemeDarkened: darken(@scheme, 5%);
 @shemeGreyColor: #311b92;
 @shemePinkColor: #e91e63;
+@shemePinkColor2: #f06292;
 //@scheme: #3f51b5;
 //@schemeLightened: lighten(@scheme, 5%);
 //@schemeDarkened: darken(@scheme, 5%);
 @textColor: #ffffff;
-//@textColor: #543729;
+@shemeGreyColor2: #424242;
 @lightGray: #F9F9F9;
 @table-bg-hover: transparent;
 @container-large-desktop: 900px;
@@ -90,7 +91,6 @@ a {
 
 header {
 	background: @shemeGreyColor;
-//  background-image: url("../assets/images/cover-registry.png");
 //  border-top: 3px solid @schemeDarkened;
 	border-bottom: 3px solid @shemePinkColor;
 	padding: 20px 0;
@@ -100,15 +100,12 @@ header {
 		font-weight: 900;
 		font-size: 64px;
 		margin: 40px 0 20px;
-//		letter-spacing: -0.025em;
 		letter-spacing: 0.05em;
 	}
 
     h2 {
           font-weight: 900;
           font-size: 24px;
-//          margin: 40px 0 20px;
-  //		letter-spacing: -0.025em;
           letter-spacing: 0.05em;
       }
 
@@ -122,6 +119,42 @@ header {
 			width: 160px;
 		}
 	}
+
+  .subscribe-button:before {
+    font-family: 'Roboto';
+    font-size: 9px;
+    margin-right: 6px;
+  }
+
+  .subscribe-button {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 38px;
+    padding: 0 20px;
+    border: transparent 1px solid;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 3px;
+    transition: all ease 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+    border-color: @textColor;
+    margin-left: 20px;
+    font-family: 'Roboto';
+  }
+
+  .subscribe-button:hover {
+    border-color: @shemePinkColor;
+    color: @textColor;
+    text-decoration: none;
+    background-color: @shemePinkColor2;
+  }
 
 	input[type=search] {
 		margin-top: 40px;
